@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>CSS on Kozilla</title>
+    <link>https://kozilla.io/tags/css/</link>
+    <description>Recent content in CSS on Kozilla</description>
+    <image>
+      <url>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 28 Mar 2022 21:20:42 +0800</lastBuildDate><atom:link href="https://kozilla.io/tags/css/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CSS 布局实操</title>
+      <link>https://kozilla.io/posts/12/</link>
+      <pubDate>Mon, 28 Mar 2022 21:20:42 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/12/</guid>
+      <description>盒子模型 CSS 通过盒子模型来描述一个元素的尺寸显示逻辑。CSS 对于元素的尺寸描述，都可以抽象为一个盒子，由如下部分组成：
+ content - 内容区域 padding - 内边距 border - 边框 margin - 外边距  盒子模型的特点  padding 不能为负值，margin 可以为负值； 背景色可以平铺到非 margin 区域（包括 content、padding、border 区域，border 颜色会和盒子背景色重合） ； margin-top 默认会出现传递现象（子元素的 margin-top 属性会引起父元素出现 margin-top 的效果）; margin 上下会出现叠加（上下两个块盒子有相邻的 margin，会出现叠加效果）。  标准盒子模型（box-sizing: content-box） 标准盒子模型，width 和 height 定义的是 content 的尺寸。
+怪异盒子模型（box-sizing: border-box） 标准盒子模型，width 和 height 定义的是 content + padding + border 的尺寸。
+在盒子的宽高已知确定的情况下布局时会非常有用。
+块级盒子（display: block） 一般使用块级盒子用来作为布局的元素。
+特点：
+ 元素独占一行； 支持所有的样式； 元素受父元素宽度约束（子元素包括 margin，皆在父元素内）； 所占区域是一个矩形。  内联盒子（display: inline） 特点：</description>
+    </item>
+    
+  </channel>
+</rss>

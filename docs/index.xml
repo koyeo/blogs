@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Kozilla</title>
+    <link>https://kozilla.io/</link>
+    <description>Recent content on Kozilla</description>
+    <image>
+      <url>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 Apr 2022 16:55:30 +0800</lastBuildDate><atom:link href="https://kozilla.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解决 filecoin-ffi build 时 rust `edition2021` is required 错误</title>
+      <link>https://kozilla.io/posts/13/</link>
+      <pubDate>Fri, 01 Apr 2022 16:55:30 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/13/</guid>
+      <description>操作步骤 git clone https://github.com/filecoin-project/filecoin-ffi.git cd filecoin-ffi ./build.sh 出现报错  ./build.sh go clean -cache -testcache . cbindgen.toml filecoin.pc rustc-target-features-optimized.json src/ rm -rf filcrypto.h filcrypto.pc libfilcrypto.a .install-filcrypto rm -f ./runner cd rust &amp;amp;&amp;amp; cargo clean &amp;amp;&amp;amp; cd .. info: component &#39;rust-std&#39; for target &#39;x86_64-apple-darwin&#39; is up to date info: component &#39;rust-std&#39; for target &#39;aarch64-apple-darwin&#39; is up to date Updating crates.io index Updating git repository `https://github.com/filecoin-project/rust-filecoin-proofs-api` Updating crates.io index Ignored package `cargo-lipo v3.2.0` is already installed, use --force to override Updating crates.</description>
+    </item>
+    
+    <item>
+      <title>CSS 布局实操</title>
+      <link>https://kozilla.io/posts/12/</link>
+      <pubDate>Mon, 28 Mar 2022 21:20:42 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/12/</guid>
+      <description>盒子模型 CSS 通过盒子模型来描述一个元素的尺寸显示逻辑。CSS 对于元素的尺寸描述，都可以抽象为一个盒子，由如下部分组成：
+ content - 内容区域 padding - 内边距 border - 边框 margin - 外边距  盒子模型的特点  padding 不能为负值，margin 可以为负值； 背景色可以平铺到非 margin 区域（包括 content、padding、border 区域，border 颜色会和盒子背景色重合） ； margin-top 默认会出现传递现象（子元素的 margin-top 属性会引起父元素出现 margin-top 的效果）; margin 上下会出现叠加（上下两个块盒子有相邻的 margin，会出现叠加效果）。  标准盒子模型（box-sizing: content-box） 标准盒子模型，width 和 height 定义的是 content 的尺寸。
+怪异盒子模型（box-sizing: border-box） 标准盒子模型，width 和 height 定义的是 content + padding + border 的尺寸。
+在盒子的宽高已知确定的情况下布局时会非常有用。
+块级盒子（display: block） 一般使用块级盒子用来作为布局的元素。
+特点：
+ 元素独占一行； 支持所有的样式； 元素受父元素宽度约束（子元素包括 margin，皆在父元素内）； 所占区域是一个矩形。  内联盒子（display: inline） 特点：</description>
+    </item>
+    
+    <item>
+      <title>修复 tsx 下 import styles from &#39;index.scss&#39; webstorm 报错问题</title>
+      <link>https://kozilla.io/posts/11/</link>
+      <pubDate>Sun, 27 Mar 2022 16:00:00 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/11/</guid>
+      <description>报错示例 配置 tsconfig.json 在项目根目录检查 tsconfig.json 配置，没有则引入：
+{ &amp;quot;compilerOptions&amp;quot;: { &amp;quot;target&amp;quot;: &amp;quot;esnext&amp;quot;, &amp;quot;module&amp;quot;: &amp;quot;esnext&amp;quot;, &amp;quot;moduleResolution&amp;quot;: &amp;quot;node&amp;quot;, &amp;quot;resolveJsonModule&amp;quot;: true, &amp;quot;importHelpers&amp;quot;: true, &amp;quot;jsx&amp;quot;: &amp;quot;react-jsx&amp;quot;, &amp;quot;esModuleInterop&amp;quot;: true, &amp;quot;sourceMap&amp;quot;: true, &amp;quot;baseUrl&amp;quot;: &amp;quot;./&amp;quot;, &amp;quot;strict&amp;quot;: true, &amp;quot;allowSyntheticDefaultImports&amp;quot;: true }, &amp;quot;include&amp;quot;: [ &amp;quot;src/**/*&amp;quot;, &amp;quot;typings.d.ts&amp;quot; ] } 配置 typing.d.ts  注：typings.d.ts 在 tsconfig.json 中被引用。
+ declare module &amp;quot;*.scss&amp;quot; { const styles: any; export default styles; } </description>
+    </item>
+    
+    <item>
+      <title>配置 Alfred snippet 实现代码片段注入，修复 idea、goland、webstorm 光标错位问题</title>
+      <link>https://kozilla.io/posts/10/</link>
+      <pubDate>Fri, 25 Mar 2022 23:32:41 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/10/</guid>
+      <description>效果演示（点击播放） 代码片段自动注入功能可谓是开发时的一大神器。有该功能的软件包括：
+ Alfred Dash TEIMPrefSetter  三款软件都是收费软件(可以自行搜索破解版)。
+选择 Alfred 的理由 Alfred 拥有很多强大的功能，如快速打开软件、计算器、搜索等等；在代码片段注入时，Dash 在开启输入法的时候，即便切换了英文状态，也无法正常使用，有可能是 bigSur 下的版本不兼容引起的。在 Alfred 下没有这个问题，甚至中文输入法下也能使用。
+配置 Alfred snippet 配置面板 在 Preferences -&amp;gt; Features -&amp;gt; Snippets 中配置：
+打开辅助功能 注意上图标红处，需要在 系统偏好设置 -&amp;gt; 安全性与隐私 -&amp;gt; 辅助功能 中打开 Alfred 开关：
+添加集合 附加处同一定义了之后往该集合中添加的代码片段关键字的前缀。此处定义了冒号。
+添加代码片段 名称不是必须的，关键字是用来输入触发注入代码片段的，允许自动扩展一定要打勾，否则输入时关键字匹配了，也不会注入代码。
+配置成功 在此处可以看到允许自动扩展已打开，同时该代码片段的关键词是 :ie。
+解决 Jetbrains 编辑器光标错乱问题 以 goland 为例，将粘贴时格式化代码设置为 none 即可：</description>
+    </item>
+    
+    <item>
+      <title>Golang cron 定时使用指南</title>
+      <link>https://kozilla.io/posts/9/</link>
+      <pubDate>Fri, 25 Mar 2022 23:04:06 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/9/</guid>
+      <description>依赖包 import &amp;#34;github.com/robfig/cron/v3&amp;#34; 基本使用 package main import ( &amp;#34;fmt&amp;#34; &amp;#34;github.com/robfig/cron/v3&amp;#34; &amp;#34;time&amp;#34; ) func main() { c := cron.New(cron.WithSeconds()) // 含义查看下文表达式示例 	c.AddFunc(&amp;#34;0/7 * * * * *&amp;#34;, func() { fmt.Println(time.Now().Format(&amp;#34;2006-01-02 15:04:05&amp;#34;)) }) c.Start() time.Sleep(300 * time.Second) } Cron 表达式 表达式字段  注：使用 cron.New(cron.WithSeconds()) 开启秒字段支持。
+    字段 必填 取值范围 特殊字符     秒（Seconds） 是 0–59 * / , -   分（Minutes） 是 0–59 * / , -   小时（Hours） 是 0–23 * / , -   一月中的某一天（Day of month） 是 1–31 * / , - ?</description>
+    </item>
+    
+    <item>
+      <title>Kafka 简易使用指南</title>
+      <link>https://kozilla.io/posts/8/</link>
+      <pubDate>Fri, 25 Mar 2022 23:03:00 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/8/</guid>
+      <description>安装 mkdir /app/kafka cd /app/kafka wget https://mirrors.bfsu.edu.cn/apache/kafka/2.8.0/kafka_2.13-2.8.0.tgz tar -xzf kafka_2.13-2.8.0.tgz cd kafka_2.13-2.8.0 ## 安装 JDK yum install java-1.8.0-openjdk.x86_64 -y # 启动 zookeeper bin/zookeeper-server-start.sh config/zookeeper.properties # 启动 kafka broker bin/kafka-server-start.sh config/server.properties 消息操作 # 创建 Topic bin/kafka-topics.sh --create --topic quickstart-events --bootstrap-server localhost:9092 # 生产消息 bin/kafka-console-producer.sh --topic quickstart-events --bootstrap-server localhost:9092 # 消费消息 bin/kafka-console-consumer.sh --topic quickstart-events --from-beginning --bootstrap-server localhost:9092 配置 supervisor 启动  kafka-zookeeper.conf
+ [program:kafka-zookeeper] command = /app/kafka/kafka_2.13-2.8.0/bin/zookeeper-server-start.sh /app/kafka/kafka_2.13-2.8.0/config/zookeeper.properties autostart = true startsecs = 5 autorestart = true startretries = 3 user = root redirect_stderr = true stdout_logfile_maxbytes = 20MB stdout_logfile_backups = 20 stdout_logfile = /app/kafka/log/zookepper.</description>
+    </item>
+    
+    <item>
+      <title>CentOS 使用 Supervisior 部署程序</title>
+      <link>https://kozilla.io/posts/7/</link>
+      <pubDate>Fri, 25 Mar 2022 23:01:45 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/7/</guid>
+      <description>1. 安装 Supervisor 支持在 python 2.4 或更高版本下运行，不支持 python 3。CentOS 默认安装了 Python 2.7.5。
+# easy_install supervisor 2. 生成配置文件 # mkdir /etc/supervisor/ &amp;amp;&amp;amp; touch /etc/supervisor/supervisord.conf # echo_supervisord_conf &amp;gt; /etc/supervisor/supervisord.conf 3. 编辑配置文件 $ mkdir -p /var/run &amp;amp;&amp;amp; chmod 777 /var/run $ mkdir -p /var/log &amp;amp;&amp;amp; chmod 777 /var/log 这里只列出了一些常用配置项：
+[unix_http_server] file=/var/run/supervisor.sock ; UNIX socket 文件，supervisorctl 会使用 ;[inet_http_server] ; HTTP 服务器，提供 web 管理界面 ;port=127.0.0.1:9001 ; Web 管理后台运行的 IP 和端口，如果开放到公网，需要注意安全性 ;username=user ; 登录管理后台的用户名 ;password=123 ; 登录管理后台的密码 [supervisord] logfile=/var/log/supervisord.</description>
+    </item>
+    
+    <item>
+      <title>Centos 安装 postgresql</title>
+      <link>https://kozilla.io/posts/6/</link>
+      <pubDate>Fri, 25 Mar 2022 23:01:06 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/6/</guid>
+      <description>添加 Yum 源 访问 https://www.postgresql.org/download 选择操作 postgresql 版本及对应的操作系统，从生成安装脚本中选择 rpm 源。
+执行安装命令 # Install the repository RPM: sudo yum install -y https://download.postgresql.org/pub/repos/yum/reporpms/EL-8-x86_64/pgdg-redhat-repo-latest.noarch.rpm # Install PostgreSQL: sudo yum install postgresql13-server -y # Optionally initialize the database and enable automatic start: sudo /usr/pgsql-13/bin/postgresql-13-setup initdb sudo systemctl enable postgresql-13 sudo systemctl start postgresql-13 设置环境变量  vim ~/.bashrc
+ export PATH=$PATH:/usr/pgsql-13/bin 登录 $ su postgres $ psql 修改 ROOT 用户密码 postgres-# alter user postgres with password &#39;123456&#39;; </description>
+    </item>
+    
+    <item>
+      <title>nps 配置内网穿透</title>
+      <link>https://kozilla.io/posts/5/</link>
+      <pubDate>Fri, 25 Mar 2022 23:00:06 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/5/</guid>
+      <description>要求  一台公网服务器 若干台内网服务器  服务器安装 $ wget https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_amd64_server.tar.gz $ tar -xvf linux_amd64_server.tar.gz $ ./nps install 配置文件目录：
+/etc/nps 命令用法：
+nps start|stop|restart|uninstall|update or nps-update update 启动：
+$ nps start # 以守护进程启动 nps默认配置文件使用了80，443，8080，8024端口:
+ 80与443端口为域名解析模式默认端口 8080为web管理访问端口 8024为网桥端口，用于客户端与服务器通信  客户端安装 $ wget https://github.com/ehang-io/nps/releases/download/v0.26.10/linux_amd64_client.tar.gz $ tar -xvf linux_amd64_client.tar.gz 启动：
+$ ./npc -server ip:8024 -vkey &amp;quot;nps后台生成的客户端的key&amp;quot; </description>
+    </item>
+    
+    <item>
+      <title>Postgresql 分区表分区范围</title>
+      <link>https://kozilla.io/posts/4/</link>
+      <pubDate>Fri, 25 Mar 2022 22:58:29 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/4/</guid>
+      <description>结论：分区表创建分区时，范围定义是左闭右开。
+ 创建分区表 create table orders ( id bigint, create_time timestamp(0) default current_timestamp ) partition by range (id); 创建默认分区 当插入数据没有子分区匹配时，会添加到默认分区。
+create table def partition of orders default; 创建子分区 create table orders_1 partition of orders for values from (1) to (10); create table orders_2 partition of orders for values from (10) to (20); 插入数据 测试1：
+insert into orders(id) values (10); 记录在 orders_2 子分区中。
+测试2：
+insert into orders(id) values (20); 记录在 def 默认分区中。</description>
+    </item>
+    
+    <item>
+      <title>mac 使用 vagrant 部署 linux 环境，配置端口导出，修复目录共享</title>
+      <link>https://kozilla.io/posts/3/</link>
+      <pubDate>Fri, 25 Mar 2022 22:57:41 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/3/</guid>
+      <description>安装 Vagrant 安装很简单，去官网下载安装 DMG 文件，双击点开安装即可。下载链接：https://www.vagrantup.com/downloads。
+启动 Centos 8 $ mkdir ~/vagrant/centos8 $ cd ~/vagrant/centos8 $ vagrant init centos/8 配置端口导出和共享目录  vim ~/vagrant/centos8/Vagrantfile
+ 添加配置项：
+config.vm.network &amp;quot;forwarded_port&amp;quot;, guest: 5671, host: 5671 config.vm.synced_folder &amp;quot;/Users/kun/workspace&amp;quot;, &amp;quot;/workspace&amp;quot; 查看《完整配置文件》。
+启动 $ vagrant up 如果启动报如下错误，请看下一节解决方案：
+Vagrant was unable to mount VirtualBox shared folders. This is usually because the filesystem &amp;quot;vboxsf&amp;quot; is not available. This filesystem is made available via the VirtualBox Guest Additions and kernel module. Please verify that these guest additions are properly installed in the guest.</description>
+    </item>
+    
+    <item>
+      <title>通过 fping 探测局域网可用的服务器</title>
+      <link>https://kozilla.io/posts/2/</link>
+      <pubDate>Thu, 24 Mar 2022 22:50:45 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/2/</guid>
+      <description>fping命令 fping类似于ping，但比ping强大。与ping要等待某一主机连接超时或发回反馈信息不同，fping给一个主机发送完数据包后，马上给下一个主机发送数据包，实现多主机同时ping，fping还可以在命令行中指定要ping的主机数量范围。
+Mac 安装 brew install fping 选项 -a # 显示存活的主机 -b # ping 数据包的大小。（默认为56） -c # ping每个目标的次数 (默认为1) -f # 从文件获取目标列表(不能与 -g 同时使用) -l # 循环发送ping -g # 通过指定开始和结束地址来生成目标列表,可以使网段 -u # 显示不可到达的目标 用法 测试整个网段：
+fping -g 192.168.0.0/24 2&amp;gt;/dev/nul 参考链接  https://wangchujiang.com/linux-command/c/fping.html  </description>
+    </item>
+    
+    <item>
+      <title>Nginx 配置 MySQK 代理</title>
+      <link>https://kozilla.io/posts/1/</link>
+      <pubDate>Thu, 24 Mar 2022 19:18:07 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/1/</guid>
+      <description>通过 Nginx 代理 MySQL或者其他 TCP 服务，在网络不通的时候，可以解决很多麻烦</description>
+    </item>
+    
+  </channel>
+</rss>

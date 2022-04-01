@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Supervisor on Kozilla</title>
+    <link>https://kozilla.io/tags/supervisor/</link>
+    <description>Recent content in Supervisor on Kozilla</description>
+    <image>
+      <url>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 25 Mar 2022 23:01:45 +0800</lastBuildDate><atom:link href="https://kozilla.io/tags/supervisor/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CentOS 使用 Supervisior 部署程序</title>
+      <link>https://kozilla.io/posts/7/</link>
+      <pubDate>Fri, 25 Mar 2022 23:01:45 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/7/</guid>
+      <description>1. 安装 Supervisor 支持在 python 2.4 或更高版本下运行，不支持 python 3。CentOS 默认安装了 Python 2.7.5。
+# easy_install supervisor 2. 生成配置文件 # mkdir /etc/supervisor/ &amp;amp;&amp;amp; touch /etc/supervisor/supervisord.conf # echo_supervisord_conf &amp;gt; /etc/supervisor/supervisord.conf 3. 编辑配置文件 $ mkdir -p /var/run &amp;amp;&amp;amp; chmod 777 /var/run $ mkdir -p /var/log &amp;amp;&amp;amp; chmod 777 /var/log 这里只列出了一些常用配置项：
+[unix_http_server] file=/var/run/supervisor.sock ; UNIX socket 文件，supervisorctl 会使用 ;[inet_http_server] ; HTTP 服务器，提供 web 管理界面 ;port=127.0.0.1:9001 ; Web 管理后台运行的 IP 和端口，如果开放到公网，需要注意安全性 ;username=user ; 登录管理后台的用户名 ;password=123 ; 登录管理后台的密码 [supervisord] logfile=/var/log/supervisord.</description>
+    </item>
+    
+  </channel>
+</rss>

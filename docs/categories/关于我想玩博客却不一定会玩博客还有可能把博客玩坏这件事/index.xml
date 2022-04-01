@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>关于我想玩博客却不一定会玩博客还有可能把博客玩坏这件事 on Kozilla</title>
+    <link>https://kozilla.io/categories/%E5%85%B3%E4%BA%8E%E6%88%91%E6%83%B3%E7%8E%A9%E5%8D%9A%E5%AE%A2%E5%8D%B4%E4%B8%8D%E4%B8%80%E5%AE%9A%E4%BC%9A%E7%8E%A9%E5%8D%9A%E5%AE%A2%E8%BF%98%E6%9C%89%E5%8F%AF%E8%83%BD%E6%8A%8A%E5%8D%9A%E5%AE%A2%E7%8E%A9%E5%9D%8F%E8%BF%99%E4%BB%B6%E4%BA%8B/</link>
+    <description>Recent content in 关于我想玩博客却不一定会玩博客还有可能把博客玩坏这件事 on Kozilla</description>
+    <image>
+      <url>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 15 Sep 2020 11:30:03 +0000</lastBuildDate><atom:link href="https://kozilla.io/categories/%E5%85%B3%E4%BA%8E%E6%88%91%E6%83%B3%E7%8E%A9%E5%8D%9A%E5%AE%A2%E5%8D%B4%E4%B8%8D%E4%B8%80%E5%AE%9A%E4%BC%9A%E7%8E%A9%E5%8D%9A%E5%AE%A2%E8%BF%98%E6%9C%89%E5%8F%AF%E8%83%BD%E6%8A%8A%E5%8D%9A%E5%AE%A2%E7%8E%A9%E5%9D%8F%E8%BF%99%E4%BB%B6%E4%BA%8B/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Nginx</title>
+      <link>https://kozilla.io/posts/nginx/nginx/</link>
+      <pubDate>Tue, 15 Sep 2020 11:30:03 +0000</pubDate>
+      
+      <guid>https://kozilla.io/posts/nginx/nginx/</guid>
+      <description>这是一段简介&amp;hellip;</description>
+    </item>
+    
+  </channel>
+</rss>

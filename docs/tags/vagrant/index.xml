@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>vagrant on Kozilla</title>
+    <link>https://kozilla.io/tags/vagrant/</link>
+    <description>Recent content in vagrant on Kozilla</description>
+    <image>
+      <url>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 25 Mar 2022 22:57:41 +0800</lastBuildDate><atom:link href="https://kozilla.io/tags/vagrant/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>mac 使用 vagrant 部署 linux 环境，配置端口导出，修复目录共享</title>
+      <link>https://kozilla.io/posts/3/</link>
+      <pubDate>Fri, 25 Mar 2022 22:57:41 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/3/</guid>
+      <description>安装 Vagrant 安装很简单，去官网下载安装 DMG 文件，双击点开安装即可。下载链接：https://www.vagrantup.com/downloads。
+启动 Centos 8 $ mkdir ~/vagrant/centos8 $ cd ~/vagrant/centos8 $ vagrant init centos/8 配置端口导出和共享目录  vim ~/vagrant/centos8/Vagrantfile
+ 添加配置项：
+config.vm.network &amp;quot;forwarded_port&amp;quot;, guest: 5671, host: 5671 config.vm.synced_folder &amp;quot;/Users/kun/workspace&amp;quot;, &amp;quot;/workspace&amp;quot; 查看《完整配置文件》。
+启动 $ vagrant up 如果启动报如下错误，请看下一节解决方案：
+Vagrant was unable to mount VirtualBox shared folders. This is usually because the filesystem &amp;quot;vboxsf&amp;quot; is not available. This filesystem is made available via the VirtualBox Guest Additions and kernel module. Please verify that these guest additions are properly installed in the guest.</description>
+    </item>
+    
+  </channel>
+</rss>

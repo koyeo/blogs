@@ -1,0 +1,199 @@
+[
+    {
+        "title": "Nginx 配置 MySQK 代理",
+        "summary": "通过 Nginx 代理 MySQL或者其他 TCP 服务，在网络不通的时候，可以解决很多麻烦 ",
+        "date": "2022-03-24T19:18:07+08:00",
+        "draft": false,
+        "tags": [
+            "Nginx",
+            "MySQL",
+            "代理"
+        ],
+        "categories": [
+            "技术文章"
+        ],
+        "uri": "/posts/1",
+        "content": "nginx proxy conf 配置 proxyconnecttimeout pass 13306 modules listen vim events stream install timeout IP yum 3306 Stream server Nginx http relaod 模块 数据库 重启 安装 文件",
+        "objectID": "/posts/1"
+    },
+    {
+        "title": "配置 Alfred snippet 实现代码片段注入，修复 idea、goland、webstorm 光标错位问题",
+        "date": "2022-03-25T23:32:41+08:00",
+        "draft": false,
+        "tags": [
+            "Alfred",
+            "代码注入"
+        ],
+        "categories": [
+            "开发工具"
+        ],
+        "uri": "/posts/10",
+        "content": "Alfred 片段 代码 软件 关键字 功能 注入 打开 输入法 添加 配置 Dash 自动 搜索 集合 辅助 定义 输入 打勾 扩展 设置 为例 Features 破解版 TEIMPrefSetter Snippets Jetbrains snippet Preferences 红处 往该 goland bigSur 编辑器 图标 冒号 光标 格式化 前缀 粘贴 计算器 错乱 神器 兼容 演示 面板 三款 隐私 关键词 点击 播放 触发 开关 附加 中文 安全性 切换 匹配 开启 英文 版本 偏好 收费 可谓 自行 即可 一大 名称 强大 理由 效果 快速 状态 开发 拥有 解决 成功 选择 系统 包括",
+        "objectID": "/posts/10"
+    },
+    {
+        "title": "修复 tsx 下 import styles from 'index.scss' webstorm 报错问题",
+        "date": "2022-03-27T16:00:00+08:00",
+        "draft": false,
+        "tags": [
+            "webstorm",
+            "typescript",
+            "react",
+            "css module"
+        ],
+        "categories": [
+            "技术文章"
+        ],
+        "uri": "/posts/11",
+        "content": "true json ts tsconfig jsx styles typings module esnext 配置 根目录 示例 报错 moduleResolution typing default target include strict src declare importHelpers sourceMap scss compilerOptions esModuleInterop export resolveJsonModule react const allowSyntheticDefaultImports baseUrl node 引用 引入 检查 项目",
+        "objectID": "/posts/11"
+    },
+    {
+        "title": "CSS 布局实操",
+        "date": "2022-03-28T21:20:42+08:00",
+        "draft": false,
+        "tags": [
+            "CSS",
+            "布局"
+        ],
+        "categories": [
+            "技术文章"
+        ],
+        "uri": "/posts/12",
+        "content": "元素 盒子 margin border content 模型 padding width box 宽度 内联 子块 height top 尺寸 区域 默认 叠加 sizing 块级 CSS display 受父 背景色 矩形 负值 样式 标准 定义 约束 描述 布局 设置 包括 内边 效果 100 TODO inline block 该子 withd 平铺 边框 换行 内容 支持 文档 空格 独占 重合 显示 怪异 时会 缺失 间隙 设定 相邻 抽象 属性 有用 思考 已知 细节 逻辑 外边 一行 传递 超出 外围 颜色 现象 变化 之间 两个 情况",
+        "objectID": "/posts/12"
+    },
+    {
+        "title": "解决 filecoin-ffi build 时 rust `edition2021` is required 错误",
+        "date": "2022-04-01T16:55:30+08:00",
+        "draft": false,
+        "tags": [
+            "filecoin-ffi",
+            "rust"
+        ],
+        "categories": [
+            "技术文章"
+        ],
+        "uri": "/posts/13",
+        "content": "filecoin rust ffi cargo Updating https crates feature Cargo nightly git filcrypto github index target nCaused Users execute toml cd package koyeo io 编译 force src std cbindgen build status Couldn failed rustup pc edition2021 override date rm darwin extern 2021 project sh apple backend manifest macro info component filwallet command clean ERROR v0 installed ExitStatus Ignored workspace 版本 报错 操作步骤 v3 called update unable cache testcache stdout stderr started 21.0 Downloading bindings stabilized source features rustc runner rf required repository releases registry reference Consider aarch64 edition recent ecc6299db9ec823 proofs 1.55.0 download parse release api requires doc packages default org optimized The nerror metadata 2.0 64 See d21c22870 master macos lotus filwiki Output lipo libfilcrypto generate unstable lang 0.1.7 version 07 install json clone cn installation 官网 1.7 information 25856 Metadata 26 html x86 解决 相关 链接 切换 尝试 查看 参考 思路 分支 依赖 升级 安装 失败 最新 成功 发布",
+        "objectID": "/posts/13"
+    },
+    {
+        "title": "通过 fping 探测局域网可用的服务器",
+        "date": "2022-03-24T22:50:45+08:00",
+        "draft": false,
+        "tags": [
+            "fping"
+        ],
+        "categories": [
+            "技术文章"
+        ],
+        "uri": "/posts/2",
+        "content": "ping fping 主机 数据包 网段 发送 目标 默认 列表 指定 56 command dev nul linux install https Mac brew html 192.168.0.0 wangchujiang 24 超时 从文件 发回 存活 显示 命令行 链接 用法 反馈 选项 某一 地址 次数 测试 参考 连接 获取 生成 安装 循环 到达 强大 等待 命令 类似 大小 结束 数量 信息",
+        "objectID": "/posts/2"
+    },
+    {
+        "title": "mac 使用 vagrant 部署 linux 环境，配置端口导出，修复目录共享",
+        "date": "2022-03-25T22:57:41+08:00",
+        "draft": false,
+        "tags": [
+            "vagrant"
+        ],
+        "categories": [
+            "技术文章"
+        ],
+        "uri": "/posts/3",
+        "content": "vagrant workspace Vagrant 安装 虚拟机 报错 This mount centos8 vboxsf kernel filesystem guest root sudo ssh command vbguest VirtualBox 5671 install reload vm 1000 config 启动 共享 目录 依赖 下载安装 配置文件 插件 双击 配置 unable faulty type synced Guest error shared downloads devel port plugin Vagrantfile properly context passwd output Additions network exit additions uid DMG module unknown mkdir Users made kun centos 官网 installed cd init Centos https host caused The bug For yum www gid vim box forwarded verify folders Please attempted folder vagrantup 点开 端口 导出 链接 一节 解决方案 添加 密码 修复 忽视 查看 下载 即可 错误 完整 设置 文件 简单",
+        "objectID": "/posts/3"
+    },
+    {
+        "title": "Postgresql 分区表分区范围",
+        "date": "2022-03-25T22:58:29+08:00",
+        "draft": false,
+        "tags": [
+            "Postgresql"
+        ],
+        "categories": [
+            "技术文章"
+        ],
+        "uri": "/posts/4",
+        "content": "orders 分区 id partition create table values 10 分区表 创建 默认 def 20 insert default 插入 测试 记录 bigint timestamp currenttimestamp range createtime 左闭 右开 数据 添加 匹配 定义 结论",
+        "objectID": "/posts/4"
+    },
+    {
+        "title": "nps 配置内网穿透",
+        "date": "2022-03-25T23:00:06+08:00",
+        "draft": false,
+        "tags": [
+            "nps",
+            "内网穿透",
+            "运维工具"
+        ],
+        "categories": [
+            "技术文章"
+        ],
+        "uri": "/posts/5",
+        "content": "nps tar 端口 gz 服务器 update 8024 客户端 443 26.10 wget 80 xvf download io start v0 https releases linuxamd64client 8080 ehang github linuxamd64server 启动 默认 文件目录 安装 网桥 配置文件 web key vkey ip uninstall install stop server restart 域名解析 npc 台内网 公网 守护 用法 后台 一台 访问 生成 若干 通信 进程 模式 命令 配置 用于 管理",
+        "objectID": "/posts/5"
+    },
+    {
+        "title": "Centos 安装 postgresql",
+        "date": "2022-03-25T23:01:06+08:00",
+        "draft": false,
+        "tags": [
+            "Postgresql"
+        ],
+        "categories": [
+            "技术文章"
+        ],
+        "uri": "/posts/6",
+        "content": "postgresql 13 sudo postgres yum https Install org usr systemctl rpm enable start install download PATH pgsql bin 安装 123456 64 pgdg EL bashrc PostgreSQL password Optionally www pub alter latest vim user initialize su setup RPM server initdb Yum repository export repos noarch x86 ROOT reporpms repo automatic redhat psql database postgresql13 环境变量 选择 操作系统 登录 添加 密码 版本 访问 脚本 用户 生成 修改 设置 命令 执行 操作",
+        "objectID": "/posts/6"
+    },
+    {
+        "title": "CentOS 使用 Supervisior 部署程序",
+        "date": "2022-03-25T23:01:45+08:00",
+        "draft": false,
+        "tags": [
+            "Supervisor",
+            "运维工具"
+        ],
+        "categories": [
+            "技术文章"
+        ],
+        "uri": "/posts/7",
+        "content": "log supervisord thrift conf supervisor supervisorctl 配置文件 stdout var 启动 true run 日志 程序 20 mkdir debug 默认 文件 logfile user stderr MB usercenter CWD 运行 指定 界面 自动 后台 重启 程序运行 命令 bisale startretries update pid opt autorestart root gowork GOENV environment logs start autostart command status stdoutlogfilebackups 777 shell startsecs NODEENV program directory chmod stdoutlogfilemaxbytes src restart stop server python reread redirect 管理 目录 查找 编辑 配置 登录 添加 顺序 查看 文件大小 创建 安装 联调 异常 ps cd 127.0.0.1 port bash pidfile 9001 password org 2.7.5 50 file Web 公网 install UNIX 为例 6. inethttpserver index Supervisorctl web 1. include vim Supervisor http username html 123 Python grep unixhttpserver touch 2.4 5. files false IP echosupervisordconf 4. HTTP easy socket sock 重试 机界面 2. CentOS 3. 退出 卡死 客户端 用户名 备注 端口 支持 备份 文档 读取 跳板 服务器 重定向 命令行 权限 手动 列出 选项 中文 安全性 密码 路径 终端 版本 次数 任意 这部分 关闭 访问 参考 输入 当作 输出 用户 生成 修改 更新 开放 进程 包含 保存 常用 一份 失败 工具 状态 执行 开发 服务 环境 内容 提供 增加",
+        "objectID": "/posts/7"
+    },
+    {
+        "title": "Kafka 简易使用指南",
+        "date": "2022-03-25T23:03:00+08:00",
+        "draft": false,
+        "tags": [
+            "Kafka",
+            "Queue"
+        ],
+        "categories": [
+            "技术文章"
+        ],
+        "uri": "/posts/8",
+        "content": "kafka server app bin zookeeper sh 2.8.0 true config 20 start properties log kafka2 13 2.13 topic quickstart bootstrap 9092 events localhost tgz stdout stdoutlogfilebackups console stderr startsecs startretries conf root redirect program autostart 2.8.0. MB autorestart cd stdoutlogfilemaxbytes logfile command user 启动 消息 安装 wget https topics tar create supervisor consumer apache 64 Topic cn producer broker openjdk install mkdir 1.8.0 mirrors JDK bfsu zookepper yum xzf beginning java x86 创建 配置 操作 消费 生产",
+        "objectID": "/posts/8"
+    },
+    {
+        "title": "Golang cron 定时使用指南",
+        "date": "2022-03-25T23:04:06+08:00",
+        "draft": false,
+        "tags": [
+            "Go",
+            "Cron",
+            "定时任务"
+        ],
+        "categories": [
+            "技术文章"
+        ],
+        "uri": "/posts/9",
+        "content": "00 执行 cron 15 每分钟 秒数 表达式 time 59 倍数 12 31 robfig 星号 示例 func v3 New main WithSeconds MAX fmt 01 import Day 10 30 github 字段 增量 小时 逗号 分钟 描述 等价 字符 用于 星期 指定 斜杠 区间 特殊符号 必填 秒或 Cron hourly golang WED midnight 23 daily 57 AddFunc h30m 56 22 annually DEC 02 50 21 Start 14 49 Sleep Seconds 2006 43 SUN 点至 42 SAT Println monthly Now 35 05 Month Minutes MON 17 36 300 yearly JAN wikipedia FRI 04 Second weekly Hours Format 该字 29 package 28 week month 特殊字符 斜线 星期三 取值 等式 一个半 星期五 问号 等同于 上表 星期一 列表 定时 链接 分隔 周六 表现形式 每隔 下文 第一天 时间 一月 间隔 预定 匹配 开启 每周 往后 含义 定义 查看 参考 依赖 重复 上午 在内 第三 下午 位置 简单 结束 支持 包括",
+        "objectID": "/posts/9"
+    }
+]

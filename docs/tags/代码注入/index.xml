@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>代码注入 on Kozilla</title>
+    <link>https://kozilla.io/tags/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5/</link>
+    <description>Recent content in 代码注入 on Kozilla</description>
+    <image>
+      <url>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 25 Mar 2022 23:32:41 +0800</lastBuildDate><atom:link href="https://kozilla.io/tags/%E4%BB%A3%E7%A0%81%E6%B3%A8%E5%85%A5/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>配置 Alfred snippet 实现代码片段注入，修复 idea、goland、webstorm 光标错位问题</title>
+      <link>https://kozilla.io/posts/10/</link>
+      <pubDate>Fri, 25 Mar 2022 23:32:41 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/10/</guid>
+      <description>效果演示（点击播放） 代码片段自动注入功能可谓是开发时的一大神器。有该功能的软件包括：
+ Alfred Dash TEIMPrefSetter  三款软件都是收费软件(可以自行搜索破解版)。
+选择 Alfred 的理由 Alfred 拥有很多强大的功能，如快速打开软件、计算器、搜索等等；在代码片段注入时，Dash 在开启输入法的时候，即便切换了英文状态，也无法正常使用，有可能是 bigSur 下的版本不兼容引起的。在 Alfred 下没有这个问题，甚至中文输入法下也能使用。
+配置 Alfred snippet 配置面板 在 Preferences -&amp;gt; Features -&amp;gt; Snippets 中配置：
+打开辅助功能 注意上图标红处，需要在 系统偏好设置 -&amp;gt; 安全性与隐私 -&amp;gt; 辅助功能 中打开 Alfred 开关：
+添加集合 附加处同一定义了之后往该集合中添加的代码片段关键字的前缀。此处定义了冒号。
+添加代码片段 名称不是必须的，关键字是用来输入触发注入代码片段的，允许自动扩展一定要打勾，否则输入时关键字匹配了，也不会注入代码。
+配置成功 在此处可以看到允许自动扩展已打开，同时该代码片段的关键词是 :ie。
+解决 Jetbrains 编辑器光标错乱问题 以 goland 为例，将粘贴时格式化代码设置为 none 即可：</description>
+    </item>
+    
+  </channel>
+</rss>

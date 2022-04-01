@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>fping on Kozilla</title>
+    <link>https://kozilla.io/tags/fping/</link>
+    <description>Recent content in fping on Kozilla</description>
+    <image>
+      <url>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 24 Mar 2022 22:50:45 +0800</lastBuildDate><atom:link href="https://kozilla.io/tags/fping/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>通过 fping 探测局域网可用的服务器</title>
+      <link>https://kozilla.io/posts/2/</link>
+      <pubDate>Thu, 24 Mar 2022 22:50:45 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/2/</guid>
+      <description>fping命令 fping类似于ping，但比ping强大。与ping要等待某一主机连接超时或发回反馈信息不同，fping给一个主机发送完数据包后，马上给下一个主机发送数据包，实现多主机同时ping，fping还可以在命令行中指定要ping的主机数量范围。
+Mac 安装 brew install fping 选项 -a # 显示存活的主机 -b # ping 数据包的大小。（默认为56） -c # ping每个目标的次数 (默认为1) -f # 从文件获取目标列表(不能与 -g 同时使用) -l # 循环发送ping -g # 通过指定开始和结束地址来生成目标列表,可以使网段 -u # 显示不可到达的目标 用法 测试整个网段：
+fping -g 192.168.0.0/24 2&amp;gt;/dev/nul 参考链接  https://wangchujiang.com/linux-command/c/fping.html  </description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>rust on Kozilla</title>
+    <link>https://kozilla.io/tags/rust/</link>
+    <description>Recent content in rust on Kozilla</description>
+    <image>
+      <url>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</url>
+      <link>https://kozilla.io/%3Clink%20or%20path%20of%20image%20for%20opengraph,%20twitter-cards%3E</link>
+    </image>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 01 Apr 2022 16:55:30 +0800</lastBuildDate><atom:link href="https://kozilla.io/tags/rust/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>解决 filecoin-ffi build 时 rust `edition2021` is required 错误</title>
+      <link>https://kozilla.io/posts/13/</link>
+      <pubDate>Fri, 01 Apr 2022 16:55:30 +0800</pubDate>
+      
+      <guid>https://kozilla.io/posts/13/</guid>
+      <description>操作步骤 git clone https://github.com/filecoin-project/filecoin-ffi.git cd filecoin-ffi ./build.sh 出现报错  ./build.sh go clean -cache -testcache . cbindgen.toml filecoin.pc rustc-target-features-optimized.json src/ rm -rf filcrypto.h filcrypto.pc libfilcrypto.a .install-filcrypto rm -f ./runner cd rust &amp;amp;&amp;amp; cargo clean &amp;amp;&amp;amp; cd .. info: component &#39;rust-std&#39; for target &#39;x86_64-apple-darwin&#39; is up to date info: component &#39;rust-std&#39; for target &#39;aarch64-apple-darwin&#39; is up to date Updating crates.io index Updating git repository `https://github.com/filecoin-project/rust-filecoin-proofs-api` Updating crates.io index Ignored package `cargo-lipo v3.2.0` is already installed, use --force to override Updating crates.</description>
+    </item>
+    
+  </channel>
+</rss>
